@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>number and operators</title>
+</head>
+
+<body>
+    <script>
+        /*math 1*/
+        let finalResult;
+        let evenOddResult;
+
+        const a = 2;
+        const b = 4;
+        const c = 5;
+        const d = 3;
+
+        const sum = a + b;
+        const sub = sum - c;
+        finalResult = sub * d;
+        evenOddResult = finalResult % 3 === 0 ? "even number" : "odd number";
+        console.log(evenOddResult);
+
+        /*math 2*/
+        let result2 = (100 / 2) * 6;
+        let finalResult2 = result2.toFixed(1);
+        console.log(finalResult2);
+        let finalNumber = Number(finalResult2);
+        console.log(typeof finalNumber);
+
+        /*math 3*/
+        const eleWeight = 1000;
+        const mouseWeight = 2;
+        const ostrichHeight = 2;
+        const duckHeight = 0.3;
+        const pwd1 = "stromboli";
+        const pwd2 = "stROmBoLi";
+        let weightComparison = eleWeight < mouseWeight;
+        let heightComparison = ostrichHeight > duckHeight;
+        let pwdMatch = pwd1 === pwd2;
+
+        const weightTest = weightComparison
+            ? "True — elephants weigh less than mice!?"
+            : "False — of course an elephant is heavier than a mouse!";
+
+        const heightTest = heightComparison
+            ? "True — an ostrich is indeed taller than a duck!"
+            : "False — apparently a duck is taller than an ostrich!?";
+
+        const pwdTest = pwdMatch
+            ? "True — the passwords match."
+            : "False — the passwords do not match; please check them";
+
+        console.log(pwdTest);
+    </script>
+</body>
+
+</html>
